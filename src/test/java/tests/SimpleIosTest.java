@@ -14,7 +14,7 @@ public class SimpleIosTest extends TestBase{
     @Tag("ios")
     @DisplayName("Text enter test")
     void inputTextTest()  {
-        step("Click on Text button", () -> {
+        step("Tap on Text button", () -> {
             $(accessibilityId("Text Button")).click();
         });
         step("Input text", () -> {

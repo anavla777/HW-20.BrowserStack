@@ -18,7 +18,7 @@ public class SearchTests extends TestBase {
     @Tag("android")
     @DisplayName("Find article by specific name test")
     void successfulSearchTest() {
-        step("Click Skip button", () -> {
+        step("Tap on Skip button", () -> {
             $(id("fragment_onboarding_skip_button")).click();
         });
         step("Type search", () -> {
@@ -35,7 +35,7 @@ public class SearchTests extends TestBase {
     @Tag("android")
     @DisplayName("Open article test")
     void successfulArticleOpeningTest() {
-        step("Click Skip button", () -> {
+        step("Tap on Skip button", () -> {
             $(id("fragment_onboarding_skip_button")).click();
         });
         step("Type search", () -> {
