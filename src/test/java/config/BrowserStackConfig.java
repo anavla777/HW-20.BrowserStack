@@ -5,7 +5,7 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.FIRST)
 @Config.Sources({
         "classpath:${device}.properties",
-        "classpath:pixel7.properties"
+        "file:~/${device}.properties"
 })
 public interface BrowserStackConfig extends Config {
 
