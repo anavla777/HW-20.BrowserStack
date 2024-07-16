@@ -2,9 +2,9 @@
 
 For local start use the following command:
 ```shell
-gradle clean test -Ddevice=android
+gradle clean androidTests -Ddevice=android
 ```
 For iOS device:
 ```shell
-gradle clean test -Ddevice=ios
+gradle clean iosTests -Ddevice=ios
 ```
