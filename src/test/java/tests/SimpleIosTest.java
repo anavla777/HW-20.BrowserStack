@@ -18,7 +18,7 @@ public class SimpleIosTest extends TestBase{
             $(accessibilityId("Text Button")).click();
         });
         step("Input text", () -> {
-            $(accessibilityId("Text Input")).sendKeys("Simple IOS Test"+"\n");
+            $(accessibilityId("Text Input")).setValue("Simple IOS Test").pressEnter();
         });
         step("Verify that test output has the text from input", () -> {
             $(accessibilityId("Text Output")).shouldHave(text("Simple IOS Test"));
