@@ -37,7 +37,6 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
     public AndroidDriver getAndroidDriver() {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("Android");
-        options.setAutomationName(config.browserstackName());
         options.setPlatformVersion(config.browserstackPlatform());
         options.setDeviceName(config.browserstackDevice());
         options.setFullReset(false);
@@ -54,7 +53,6 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
     public IOSDriver getIosDriver() {
         XCUITestOptions options = new XCUITestOptions();
         options.setPlatformName("iOS");
-        options.setAutomationName(config.browserstackName());
         options.setPlatformVersion(config.browserstackPlatform());
         options.setDeviceName(config.browserstackDevice());
         options.setFullReset(false);
