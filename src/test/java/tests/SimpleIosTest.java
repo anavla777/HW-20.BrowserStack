@@ -20,7 +20,7 @@ public class SimpleIosTest extends TestBase{
         step("Input text", () -> {
             $(accessibilityId("Text Input")).sendKeys("Simple IOS Test"+"\n");
         });
-        step("Check text output", () -> {
+        step("Verify that test output has the text from input", () -> {
             $(accessibilityId("Text Output")).shouldHave(text("Simple IOS Test"));
         });
     }
