@@ -44,7 +44,7 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
 
         try {
             return new AndroidDriver(new URI("https://" + authConfig.bsLogin() + ":" + authConfig.bsPassword()
-                    + "@hub-cloud.browserstack.com/wd/hub").toURL(), options);
+                    + "@" + config.browserstackUrl()).toURL(), options);
         } catch (MalformedURLException | URISyntaxException e) {
             throw new RuntimeException(e);
         }
@@ -59,7 +59,7 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
         options.setApp(config.browserstackApp());
         try {
             return new IOSDriver(new URI("https://" + authConfig.bsLogin() + ":" + authConfig.bsPassword()
-                    + "@hub-cloud.browserstack.com/wd/hub").toURL(), options);
+                    + "@" + config.browserstackUrl()).toURL(), options);
         } catch (MalformedURLException | URISyntaxException e) {
             throw new RuntimeException(e);
         }
