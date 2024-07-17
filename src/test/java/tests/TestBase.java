@@ -20,8 +20,6 @@ public class TestBase {
 
         Configuration.browserSize = null;
         Configuration.browser = BrowserStackMobileDriver.class.getName();
-        Configuration.timeout=30000;
-
     }
 
     @BeforeEach

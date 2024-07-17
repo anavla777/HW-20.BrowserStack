@@ -27,6 +27,5 @@ public interface BrowserStackConfig extends Config {
     @DefaultValue("Wikipedia app tests")
     String browserstackName();
 
-    @DefaultValue("https://hub.browserstack.com/wd/hub")
     String browserstackUrl();
 }
